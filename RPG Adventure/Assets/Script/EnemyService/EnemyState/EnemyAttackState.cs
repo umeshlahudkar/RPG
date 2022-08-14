@@ -17,8 +17,9 @@ public class EnemyAttackState : EnemyState
         if (timeSinceLastAttack >= enemyController.enemyModel.timeBetweenAttack)
         {
             timeSinceLastAttack = 0;
-            Attack();
+            ResetTriggerFightAnimation();
             TriggerFightAnimation();
+            Attack();
         }
 
         if (!CanAttack())
@@ -57,7 +58,7 @@ public class EnemyAttackState : EnemyState
     public override void Exit()
     {
         base.Exit();
-        ResetTriggerFightAnimation();
+        StopFightAnimation();
         enemyController.agent.isStopped = false;
     }
 }

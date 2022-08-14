@@ -50,6 +50,11 @@ public class EnemyState
 
     public void ResetTriggerFightAnimation()
     {
+        enemyController.animator.ResetTrigger("stopAttack");
+    }
+
+    public void StopFightAnimation()
+    {
         enemyController.animator.SetTrigger("stopAttack");
     }
    
