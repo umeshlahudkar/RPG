@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5119de42cbe862b48ab8403576bae971, type: 3}
+  m_Name: UnarmedEnemy
+  m_EditorClassIdentifier: 
+  weaponType: 1
+  enemyView: {fileID: 6609316999245331643, guid: 391f8e6bdacf560469e9afbabd56e110, type: 3}
+  material: {fileID: 2100000, guid: 78be5954566d2d848918e51832341fa3, type: 2}
+  animatorOverrideController: {fileID: 0}
+  timeBetweenAttack: 3
+  chaseSpeed: 5.668
+  patrolSpeed: 1.5
+  chaseDistance: 12
+  attackDistance: 1.5
+  waypointWaitTime: 3
+  health: 100
+  damagePoint: 5

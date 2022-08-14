@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1742e37db3f50ba46b237009962c8140, type: 3}
+  m_Name: WeaponSO
+  m_EditorClassIdentifier: 
+  weapons:
+  - weaponDamage: 10
+    speed: 10
+    weaponPrefab: {fileID: 5717283953751104747, guid: b0d703510e9be2f438574f8b44917a38, type: 3}
+    characterType: 1
+    weaponType: 2
+    timeToDisable: 0
+  - weaponDamage: 10
+    speed: 10
+    weaponPrefab: {fileID: 2626483333362625496, guid: 0abc7af38fbf54943b9592f67522a332, type: 3}
+    characterType: 1
+    weaponType: 4
+    timeToDisable: 6
+  - weaponDamage: 10
+    speed: 10
+    weaponPrefab: {fileID: 1045636666593529623, guid: 56df28213f5c2cc4abcf2396e9517fd9, type: 3}
+    characterType: 1
+    weaponType: 3
+    timeToDisable: 6
+  - weaponDamage: 10
+    speed: 10
+    weaponPrefab: {fileID: 5717283953751104747, guid: b0d703510e9be2f438574f8b44917a38, type: 3}
+    characterType: 2
+    weaponType: 2
+    timeToDisable: 0
+  - weaponDamage: 10
+    speed: 10
+    weaponPrefab: {fileID: 7828137567694354924, guid: 4eaebdb31a1df1a46afe130f000deaab, type: 3}
+    characterType: 2
+    weaponType: 3
+    timeToDisable: 6
+  - weaponDamage: 10
+    speed: 10
+    weaponPrefab: {fileID: 2626483333362625496, guid: 0abc7af38fbf54943b9592f67522a332, type: 3}
+    characterType: 2
+    weaponType: 4
+    timeToDisable: 6

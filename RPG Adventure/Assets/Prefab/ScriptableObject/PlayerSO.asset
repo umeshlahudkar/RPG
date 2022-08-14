@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f46e6a91fc6dfd944b39afe81d752db8, type: 3}
+  m_Name: PlayerSO
+  m_EditorClassIdentifier: 
+  playerView: {fileID: 2494775148254419339, guid: f313fdba26e707945bb576e0b8f82667, type: 3}
+  health: 200
+  damagePoint: 10
+  stat:
+  - weaponType: 1
+    overrideController: {fileID: 0}
+    stoppingDistance: 1.5
+  - weaponType: 2
+    overrideController: {fileID: 22100000, guid: 95cdd314fba4a7f46917e0fa16885469, type: 2}
+    stoppingDistance: 5
+  - weaponType: 3
+    overrideController: {fileID: 22100000, guid: 0dca6e3819ef9b74bbe2fd5ac8fd4347, type: 2}
+    stoppingDistance: 20
+  - weaponType: 4
+    overrideController: {fileID: 22100000, guid: ca1ee00eb9e12b947a44eb057c7df4d2, type: 2}
+    stoppingDistance: 20
