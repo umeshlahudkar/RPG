@@ -34,11 +34,7 @@ public class PlayerModel
         stats = Array.Find(playerSO.stat, item => item.weaponType == _weaponType);
         animatorOverrideController = stats.overrideController;
         stopDistance = stats.stoppingDistance;
-
-        if(animatorOverrideController != null)
-        {
-            playerController.OverrideAnimator();
-        }
+        playerController.OverrideAnimator();
     }
 
     public void SetHealth(int value)
