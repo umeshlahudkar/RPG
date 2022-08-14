@@ -87,7 +87,10 @@ public class PlayerController
 
     public void OverrideAnimator()
     {
-        animator.runtimeAnimatorController = playerModel.animatorOverrideController;
+        if(playerModel.animatorOverrideController != null)
+        {
+            animator.runtimeAnimatorController = playerModel.animatorOverrideController;
+        }
     }
 
     // cast the ray and based on hitInfo and user input, player will move or attack
@@ -153,6 +156,7 @@ public class PlayerController
     // based on weapon equipped, player attacks
     public void Attack()
     {
+        ResetStopFightAnimationTrigger();
         PlayFightAnimation();
 
         switch(playerModel.weaponType)
@@ -186,14 +190,22 @@ public class PlayerController
         animator.SetFloat("ForwardSpeed", speed);
     }
 
+    // Playes the Attack Animation
     public void PlayFightAnimation()
     {
         animator.SetTrigger("attack");
     }
 
+    // During playing Fight animation, if player Runs away stops the fight animation
     public void StopFightAnimation()
     {
         animator.SetTrigger("stopAttack");
+    }
+
+    // Reset the StopAttack trigger
+    public void ResetStopFightAnimationTrigger()
+    {
+        animator.ResetTrigger("stopAttack");
     }
 
     // Update the player XP count and Display
